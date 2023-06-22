@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About To-do Web-Application</title>
+  <link rel="stylesheet" type="text/css" href="Main/styles.css">
+  <link rel="stylesheet" href="vendor/bootstrap-5.2.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="vendor/fontawesome6/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
+        <div class="container">
+            <a href="#" class="navbar-brand">TO-DO LOGO</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#hpnav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="hpnav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item m-1"><a href="index.html" class="nav-link text-dark">Home</a></li>
+                    <li class="nav-item m-1"><a href="aboutus.html" class="nav-link text-dark">About</a></li>
+                </ul>
+                <div class="form-group">
+                    <input type="search" name="" class="" placeholder="Find something..." id="">
+                    <input type="submit" value="Search" class="search_btn">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="filter_container">
+      <div class="filter_dropdown">
+        <button class="drop_btn">Filter</button>
+        <div class="dropdown-content">
+          <a href="#all">All</a>
+          <a href="#active">Active</a>
+          <a href="#completed">Completed</a>
+        </div>
+      </div>
+      <div class="btn">
+        <div class="btn__indicator">
+          <div class="btn__icon-container">
+            <i class="btn__icon fa-solid"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header>
+    <h1>To-Do List Manager</h1>
+  </header>
+  <section class="about-section">
+    <h2>About the Application</h2>
+    <p>Welcome to our to-do list web application! This simple yet powerful tool helps you stay organized and manage your tasks efficiently. Whether it's keeping track of your daily chores, work assignments, or personal goals, our application is designed to streamline your productivity.</p>
+
+    <h2>Key Features</h2>
+    <ul>
+      <li>Easy Task Management: Add, update, and remove tasks effortlessly.</li>
+      <li>Task Completion Tracking: Mark tasks as complete and monitor your progress.</li>
+      <li>Filtering Options: Filter tasks based on their completion status or other custom criteria.</li>
+      <li>Dark Mode: Enjoy a visually pleasing experience with our dark mode feature.</li>
+      <li>User-Friendly Interface: Intuitive design for seamless navigation and task management.</li>
+    </ul>
+
+    <h2>How to Use</h2>
+    <ol>
+      <li>Adding Tasks: Simply enter your task in the input field and press Enter to add it to your to-do list.</li>
+      <li>Marking Tasks as Complete: Click on the checkbox next to a task to mark it as complete. Click again to undo.</li>
+      <li>Deleting Tasks: Use the "Delete" button next to each task to remove it from your list.</li>
+      <li>Filtering Tasks: Use the filter options to view all tasks, active tasks, or completed tasks based on your preference.</li>
+    </ol>
+
+    <h2>Stay Organized and Productive</h2>
+    <p>Our to-do list application is designed to help you prioritize your tasks, increase your productivity, and reduce stress. By organizing your tasks and tracking their completion, you can stay focused and achieve your goals more effectively.</p>
+
+    <h2>Feedback and Support</h2>
+    <p>We value your feedback! If you have any suggestions, feature requests, or need assistance, please don't hesitate to reach out to our support team. We are here to help you make the most out of our to-do list application.</p>
+  </section>
+  <footer>
+    <div class="col text-center">&copy <span id="year"></span> To-Do List Manager</div>
+    <script src="Main/script.js"></script>
+    <script src="vendor/popperjs/src/popper.js"></script>
+    <script src="vendor/bootstrap-5.2.1-dist/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
