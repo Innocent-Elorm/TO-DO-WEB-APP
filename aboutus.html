@@ -12,7 +12,7 @@
 </head>
 <body>
     <!--Navigation Bar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
+    <nav class="navbar navbar-expand-lg navbar-light p-4 bgself">
         <div class="container">
             <a href="#" class="navbar-brand">TO-DO LOGO</a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#hpnav">
@@ -22,7 +22,9 @@
             <div class="collapse navbar-collapse" id="hpnav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item m-1"><a href="index.html" class="nav-link text-dark">Home</a></li>
+                    <li class="nav-item m-1"><a href="mainpage.html" class="nav-link text-dark">To-Do</a></li>
                     <li class="nav-item m-1"><a href="aboutus.html" class="nav-link text-dark">About</a></li>
+                    <li class="nav-item m-1"><a href="contact.html" class="nav-link text-dark">Contact</a></li>
                 </ul>
                 <div class="form-group">
                     <input type="search" name="" class="" placeholder="Find something..." id="">
@@ -32,14 +34,6 @@
         </div>
     </nav>
     <div class="filter_container">
-      <div class="filter_dropdown">
-        <button class="drop_btn">Filter</button>
-        <div class="dropdown-content">
-          <a href="#all">All</a>
-          <a href="#active">Active</a>
-          <a href="#completed">Completed</a>
-        </div>
-      </div>
       <div class="btn">
         <div class="btn__indicator">
           <div class="btn__icon-container">
@@ -48,7 +42,6 @@
         </div>
       </div>
     </div>
-  </div>
   <header>
     <h1>To-Do List Manager</h1>
   </header>

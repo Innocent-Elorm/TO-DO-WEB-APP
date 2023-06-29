@@ -14,7 +14,7 @@
 </head>
 <body>
     <!--Navigation Bar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
+    <nav class="navbar navbar-expand-lg navbar-light p-4 bgself">
         <div class="container">
             <a href="#" class="navbar-brand">TO-DO LOGO</a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#hpnav">
@@ -24,7 +24,9 @@
             <div class="collapse navbar-collapse" id="hpnav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item m-1"><a href="index.html" class="nav-link text-dark">Home</a></li>
+                    <li class="nav-item m-1"><a href="mainpage.html" class="nav-link text-dark">To-Do</a></li>
                     <li class="nav-item m-1"><a href="aboutus.html" class="nav-link text-dark">About</a></li>
+                    <li class="nav-item m-1"><a href="contact.html" class="nav-link text-dark">Contact</a></li>
                 </ul>
                 <div class="form-group">
                     <input type="search" name="" class="" placeholder="Find something..." id="">
@@ -35,15 +37,6 @@
         </div>
     </nav>
     <div class="filter_container">
-      <div class="filter_dropdown">
-        <button class="drop_btn">Filter</button>
-        <div class="dropdown-content">
-          <a href="#" id="all">All</a>
-          <a href="#" id="active">Active</a>
-          <a href="#" id="completed">Completed</a>
-        </div>
-      </div>
-    
       <div class="btn">
         <div class="btn__indicator">
           <div class="btn__icon-container">
@@ -54,26 +47,63 @@
     </div>
     
   </div>
-  <header>
-    <h1>To-Do List Manager</h1>
-  </header>
-  <main>
-    <div class="to-do_container">
-      <div class="addTask">
-        <input id="input_task" type="text" placeholder="Add a Task">
-        <button id="add_btn">Add</button>
+  <div class="img">
+    <div class="index-header">
+      <section class="img-section">
+        <h1>Welcome To Our To-Do List Manager</h1>
+        <p>
+          Welcome to our to-do list web application! This simple yet powerful tool helps you stay organized
+          and manage your tasks efficiently. Whether it's keeping track of your daily chores, work assignments, 
+          or personal goals, our application is designed to streamline your productivity.
+        </p>
+        <p>We got you.
+          Our application is going to help you keep track of your daily routin and various activities you perform constantly
+          by just adding them to your list for quick reminder.
+        </p>
+        
+      </section>
+    </div>
+
+    <section class="slider py-5">
+      <div class="container5 text-center py-5">
+        <div class="row">
+          <div class="col-lg-9 m-auto">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./Main/images/diet.jpg" class="img-fluid avater mb-4" alt="...">
+                  <h4>Healthy Diet </h4>
+                  <p class="perac py-3">
+                    Want to keep track of your health in terms of the diet you take? 
+                    This application is here to help you list the items as your to-dos and help you perform
+                    it accordingly as you wish
+                  </p>
+                  <a href="mainpage.html"><button class="prcbtn mt-3">Proceed</button></a>
+                </div>
+                <div class="carousel-item">
+                  <img src="./Main/images/workout.jpg" class="img-fluid avater mb-4" alt="...">
+                  <h4>Health Walk</h4>
+                  <p class="perac py-3">
+                    It is good for us to take a healhty walk every day for at least twenty minutes each day
+                    Keep track of your health walk indivdualy, with your partner or your entire family
+                  </p>
+                  <a href="mainpage.html"><button class="prcbtn mt-3">Proceed</button></a>
+                </div>
+                <div class="carousel-item">
+                  <img src="./Main/images/man.png" class="img-fluid avater mb-4" alt="...">
+                  <h4>Visit the gym</h4>
+                  <p class="perac py-3">
+                    This application can as well help you workout just by adding it your list as an activity to take
+                  </p>
+                  <a href="mainpage.html"><button class="prcbtn mt-3">Proceed</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-  
-      <div id="all_active">
-        <ol class="notCompleted home-ol"  id="active">
-          <h3>Active</h3>
-        </ol>
-  
-        <ol class="Completed home-ol" id="completed">
-          <h3>Completed</h3>
-        </ol>
-      </div></div>
-  </main>
+    </section>
+  </div>
   <footer>
     <div class="col text-center">&copy <span id="year"></span> To-Do List Manager</div>
     <script src="Main/script.js"></script>
