@@ -29,10 +29,16 @@ body {
     background: linear-gradient(rgba(0, 15, 151, 0.79), rgba(4, 26,100,0.73)), url(./images/workout.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 110vh;
+    height: fit-content;
+    width: 100%;
   }
   
   .active{
+    color: var(--dark-text-color);
+  }
+
+  .img-section p{
+    font-size: 18px;
     color: var(--dark-text-color);
   }
   .avater{
@@ -71,9 +77,9 @@ body {
   .img-section{
     color: var(--dark-text-color);
     top: 180px;
-    right: 20px;
-    left: 50px;
-    margin-bottom: 30px;
+    right: 50px;
+    left: 80px;
+    margin-bottom: 10px;
   }
 
   header {
@@ -87,8 +93,7 @@ body {
   .index-header{
     display: flex;
     align-items: center;
-    padding: 30px;
-    
+    padding: 20px;
     flex-wrap: wrap;
   }
   
@@ -123,7 +128,7 @@ body {
   }
 
   .nav-item a{
-    width: 10vh;
+    width: fit-content;
     text-align: center;
     justify-content: center;
     display: inline-block;
@@ -140,7 +145,7 @@ body {
     color: var(--light-color) !important;
     background-color: var(--color);
   }
-  
+ 
   .filter_container{
     width: 100%;
     height: 3.5rem;
@@ -378,74 +383,82 @@ footer {
 }
 
 /*-------Contact Page-----------*/
-.contact-section {
-  width: 80%;
-  margin: 0 auto 10px auto;
-  max-width: 600px;
-}
-
-.feedback-section {
-  width: 100%;
+.contact-form {
+  max-width: 400px;
+  margin: 50px auto;
   padding: 20px;
-  max-width: 600px;
-  margin-left: 80px;
-}
-
-#fdb-form{
-  max-width: 800px;
-  margin: 0px auto;
-  padding: 20px;
-  background-color: var(--dark-icon-color);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-h1, h2 {
-  font-family: Verdana, Tahoma;
-}
-
-h2 {
-  border-bottom: 4px solid #dfdfe2;
-  margin-top: 0px;
-  padding-top: 60px;
-}
-
-.info {
-  padding: 10px 0 0 5px;
-}
-
-input {
-  font-size: 16px;
-}
-
-.info label, .info input {
-  display: inline-block;
-}
-
-.info input {
-  width: 50%;
-  text-align: left;
-  border: 1px solid rgb(7, 7, 78);
+  background-color: #f8f8f8;
   border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.info label {
-  width: 10%;
-  min-width: 55px;
-  text-align: right;
-  color: rgb(0, 112, 187);
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.answer {
-  color: rgb(0, 112, 187);
+.contact-form .input-box {
+  position: relative;
+  margin-bottom: 25px;
 }
 
-.sendbtn{
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  margin-left: 160px;
-  height: 50px;
-  width: 15%;
+.contact-form .input-box input,
+.contact-form .input-box textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid #ddd;
+}
+
+.contact-form .input-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  font-size: 16px;
+  color: #888;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.contact-form .input-box input:focus ~ label,
+.contact-form .input-box input:valid ~ label,
+.contact-form .input-box textarea:focus ~ label,
+.contact-form .input-box textarea:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #1c8adb;
+  font-size: 12px;
+}
+
+.contact-form {
+  font-size: 30px;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.contact-form {
+  content: "\2606";
+}
+
+.contact-form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #1c8adb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #1476a8;
 }
 
 
@@ -496,4 +509,16 @@ body.darkmode{
 
 .darkmode #fdb-form{
   background-color: var(--dark-color);
+}
+
+.darkmode .contact-form .input-box input,
+.contact-form .input-box textarea {
+  color: var(--dark-text-color);
+  border-bottom: 1px solid #ffffff;
+}
+
+.darkmode .contact-form {
+  background-color: #3a3a3a;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }

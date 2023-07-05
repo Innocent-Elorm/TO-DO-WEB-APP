@@ -213,3 +213,27 @@ function showCompletedTasks() {
 // Load the tasks on page load
 loadTasks();
 loadCompletedTasks();
+
+
+function submitFeedback(event) {
+  event.preventDefault();
+
+  // Retrieve form values
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var address = document.getElementById("address").value;
+  var feedback = document.getElementById("feedback").value;
+
+  // Perform any desired operations with the form values
+  console.log("Name: " + name);
+  console.log("Email: " + email);
+  console.log("Address: " + address);
+  console.log("Rating: " + rating);
+  console.log("Feedback: " + feedback);
+
+  // Clear form inputs
+  document.getElementById("name").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("address").value = "";
+  document.getElementById("feedback").value = "";
+}

@@ -24,7 +24,7 @@
             <div class="collapse navbar-collapse" id="hpnav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item m-1"><a href="index.html" class="nav-link text-dark">Home</a></li>
-                    <li class="nav-item m-1"><a href="mainpage.html" class="nav-link text-dark">To-Do</a></li>
+                    <li class="nav-item m-1"><a href="mainpage.html" class="nav-link text-dark">To Do</a></li>
                     <li class="nav-item m-1"><a href="aboutus.html" class="nav-link text-dark">About</a></li>
                     <li class="nav-item m-1"><a href="contact.html" class="nav-link text-dark">Contact</a></li>
                 </ul>
@@ -46,34 +46,43 @@
         </div>
       </div>
 
-      <form method="post" id="fdb-form" netlify>
-        <section role="region" aria-labelledby="Personal Info" class="contact-section">
-          <h2 id="student-info">Your Feedback</h2>
-          <div class="info">
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name" />
+      <div class="contact-form">
+        <form id="feedbackForm" onsubmit="submitFeedback(event)">
+          <h2>Contact Us</h2>
+    
+          <div class="input-box">
+            <span class="icon"><ion-icon name="person"></ion-icon></span>
+            <input type="text" id="name" required>
+            <label>Name</label>
           </div>
-          <div class="info">
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" />
+    
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="email" id="email" required>
+            <label>Email</label>
           </div>
-          <div class="info">
-            <label for="number">Number:</label>
-            <input type="text" name="number" id="number" />
+
+          <div class="input-box">
+            <span class="icon"><ion-icon name="number"></ion-icon></span>
+            <input type="text" id="number" required>
+            <label>Phone Number</label>
           </div>
-          <div class="info">
-            <label for="country">Country:</label>
-            <input type="text" name="country" id="country" />
+    
+          <div class="input-box">
+            <span class="icon"><ion-icon name="location"></ion-icon></span>
+            <input type="text" id="address" required>
+            <label>Address</label>
           </div>
-        </section>
-        <section role="region" aria-labelledby="Your feedback" class="feedback-section">
-          <div class="answer">
-              <textarea id="question" name="question" rows="5" cols="50" placeholder="We need your feedback to improve..."></textarea>
-            </div>
-          
-        </section>
-        <button type="submit" class="prcbtn sendbtn">Send</button>
-      </form>
+
+          <div class="input-box">
+            <span class="icon"><ion-icon name="chatbubble"></ion-icon></span>
+            <textarea id="feedback" required></textarea>
+            <label>Feedback</label>
+          </div>
+    
+          <button type="submit">Submit</button>
+        </form>
+      </div>
 
       
   <footer>
