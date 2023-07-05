@@ -221,19 +221,23 @@ function submitFeedback(event) {
   // Retrieve form values
   var name = document.getElementById("name").value;
   var email = document.getElementById("email").value;
+  var number = document.getElementById("number").value;
   var address = document.getElementById("address").value;
   var feedback = document.getElementById("feedback").value;
+
+  alert("Form submitted successfully!");
 
   // Perform any desired operations with the form values
   console.log("Name: " + name);
   console.log("Email: " + email);
+  console.log("Number: " + number);
   console.log("Address: " + address);
-  console.log("Rating: " + rating);
   console.log("Feedback: " + feedback);
 
   // Clear form inputs
   document.getElementById("name").value = "";
   document.getElementById("email").value = "";
+  document.getElementById("number").value = "";
   document.getElementById("address").value = "";
   document.getElementById("feedback").value = "";
 }

@@ -512,7 +512,7 @@ body.darkmode{
 }
 
 .darkmode .contact-form .input-box input,
-.contact-form .input-box textarea {
+.darkmode .contact-form .input-box textarea {
   color: var(--dark-text-color);
   border-bottom: 1px solid #ffffff;
 }
